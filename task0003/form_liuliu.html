@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>表单的重新设计</title>
+</head>
+<body>
+<form>
+	<fieldset>
+		<legend>个人资料:</legend>
+		<p>
+			<label>姓名：</label>
+			<input type="text" name="name" disabled="disabled" value="刘春柳">
+		</p>
+		<p>
+			<label>性别：</label>
+			<input type="radio" name="sex" value="male" disabled="disabled"> 男
+			<input type="radio" name="sex" value="female" disabled="disabled" checked="checked"> 女
+		</p>
+		<p>
+			<label>出生日期：</label>
+			<input type="date" disabled="disabled" value="1995-01-24">
+		</p>
+		<p>
+			<label>证件号码：</label>
+			<input type="text" name="name" disabled="disabled" value="42092119950124****">
+		</p>
+		<p>
+			<label>国籍：</label>
+			<select name="country">
+			 <optgroup label="亚洲">
+			    <option>中国</option>
+			    <option>韩国</option>
+			    <option>日本</option>
+			  </optgroup>
+			  <optgroup label="美洲">
+			    <option>美国</option>
+			    <option>加拿大</option>
+			  </optgroup>
+			  <optgroup label="欧洲">
+			    <option>英国</option>
+			    <option>法国</option>
+			    <option>德国</option>
+			  </optgroup>
+			 </select>
+		</p>
+		<p>
+			<label>姓名拼音／英文姓名：</label>
+			<input type="text" name="English_name" placeholder="请输入全大写字母" size="20" maxlength="20" required="required">
+		</p>
+		<p>
+			<label>婚姻状况：</label>
+			<input type="radio" name="marry" value="yes" required="required"> 已婚
+			<input type="radio" name="marry" value="no" required="required"> 未婚
+		</p>
+		<p>
+			<label>证件类型：</label>
+			<select name="ID">
+				  <option value="1">身份证</option>
+				  <option value="2">身份证</option>
+				  <option value="3">身份证</option>
+			</select>
+		</p>
+		<p>
+			<label>证件有效截止日期：</label>
+			<input type="date">
+		</p>
+		<hr>
+		<p>
+		以下信息可能应用于您用卡过程中的身份核实，请您慎重填写并牢记。您预留的个性化信息将以最新一次填写为准。
+		</p>
+		<p>
+			<label>曾就读小学名称：</label>
+			<input type="text" name="school" required="required">
+		</p>
+		<p>
+			<label>现住宅地址：</label>
+			<select name="address_country">
+			    <option value="0">请选择</option>
+				<option value="1">北京</option>
+				<option value="2">上海</option>
+				<option value="3">湖北</option>
+				<option value="4">湖南</option>
+				<option value="5">广东</option>
+				<option value="6">云南</option>
+			</select>
+			<select name="address_province">
+				<option value="0">请选择</option>
+				<option value="1">武汉</option>
+				<option value="2">孝感</option>
+				<option value="3">随州</option>
+				<option value="4">黄石</option>
+				<option value="5">黄冈</option>
+				<option value="6">襄阳</option>
+			</select>
+			<select name="address_distract">
+				<option value="0">请选择</option>
+				<option value="1">洪山区</option>
+				<option value="2">青山区</option>
+				<option value="3">武昌区</option>
+				<option value="4">汉阳区</option>
+			</select>
+			<input type="text" name="address_detail" required="required" placeholder="请填写详细地址，如：xx区xx街道xx大厦xx房间" size="60"> 
+		</p>
+		<p>
+			<label>住宅状况：</label>
+			<select name="address_distract">
+				<option value="0">请选择</option>
+				<option value="1">单位分房</option>
+				<option value="2">独立买房</option>
+				<option value="3">按揭</option>
+			</select>
+		</p>
+		<p>
+			<label>邮政编码：</label>
+			<input type="text" name="zip_code" size="6" minlength="6">
+		</p>
+		<p>
+			<label>已持有：</label>
+			<input type="text" name="num1" size="3">家银行信用卡<input type="text" name="num2" size="3">张，授信额度共计<input type="text" name="num3" size="3">万元
+		</p>
+	</fieldset>
+	
+	<fieldset>
+		<legend>单位资料:</legend>
+		<p>工作单位或固定住址所在地应与办卡城市所在地相同，如不同，您的申请将会收到影响</p>
+		<p>
+			<label>单位名称：</label>
+			<input type="text" name="unit" required="required">
+		</p>
+		<p>
+			<label>单位性质：</label>
+			<select name="unit_nature" required="required">
+				<option value="0">请选择</option>
+				<option value="1">公有</option>
+				<option value="2">事业单位</option>
+				<option value="3">私有</option>
+			</select>
+		</p>
+		<p>
+			<label>单位电话：</label>
+			<input type="text" name="tel1" required="required" placeholder="国内长途电话区号">－<input type="text" name="tel2" required="required" placeholder="电话号码">  分机<input type="text" name="tel3" placeholder="分机号码">
+		</p>
+		<p>
+			<label>所属行业：</label>
+			<select name="industry" required="required">
+				<option value="0">请选择</option>
+				<option value="1">互联网</option>
+				<option value="2">机械</option>
+				<option value="3">军工</option>
+			</select>
+		</p>
+		<p>
+			<label>单位地址：</label>
+			<select name="unit_province">
+			    <option value="0">请选择</option>
+				<option value="1">北京</option>
+				<option value="2">上海</option>
+				<option value="3">湖北</option>
+				<option value="4">湖南</option>
+				<option value="5">广东</option>
+				<option value="6">云南</option>
+			</select>
+			<select name="unit_city">
+				<option value="0">请选择</option>
+				<option value="1">武汉</option>
+				<option value="2">孝感</option>
+				<option value="3">随州</option>
+				<option value="4">黄石</option>
+				<option value="5">黄冈</option>
+				<option value="6">襄阳</option>
+			</select>
+			<select name="unit_district">
+				<option value="0">请选择</option>
+				<option value="1">洪山区</option>
+				<option value="2">青山区</option>
+				<option value="3">武昌区</option>
+				<option value="4">汉阳区</option>
+			</select>
+			<input type="text" name="address_detail" required="required" placeholder="请填写详细地址，如：xx区xx街道xx大厦xx房间" size="60"> 
+		</p>
+		<p>
+			<label>邮政编码：</label>
+			<input type="text" name="zip_code" size="6" minlength="6">
+		</p>
+		<p>
+			<label>从事职业：</label>
+			<select name="job" required="required">
+				<option value="0">请选择</option>
+				<option value="1">教师</option>
+				<option value="2">医生</option>
+			</select>
+		</p>
+		<p>
+			<label>担任职务：</label>
+			<select name="work_place" required="required">
+				<option value="0">请选择</option>
+				<option value="1">总经理</option>
+				<option value="2">职员</option>
+				<option value="3">CEO</option>
+			</select>
+		</p>
+		<p>
+			<label>年收入：</label>
+			<input type="text" name="salary" required="required" placeholder="0.00">元
+		</p>
+	</fieldset>
+
+	<fieldset>
+		<legend>联系人资料：</legend>
+		<p>
+			<label>联系人姓名：</label>
+			<input type="text" name="name_relationship" required="required">
+		</p>
+		<p>
+			<label>与主卡申请人关系：</label>
+			<input type="radio" name="relationship" value="couple"> 夫妻
+			<input type="radio" name="relationship" value="fa"> 父子
+			<input type="radio" name="relationship" value="ma"> 母子
+			<input type="radio" name="relationship" value="cousin"> 兄弟姐妹
+			<input type="radio" name="relationship" value="friend"> 朋友
+			<input type="radio" name="relationship" value="colleague"> 同事
+		</p>
+		<p>
+			<label>手机：</label>
+			<input type="text" name="phone" required="required">
+		</p>
+	</fieldset>
+	<input type="submit" name="submit">
+	<input type="reset" name="reset">
+</form>
+
+</body>
+</html>
