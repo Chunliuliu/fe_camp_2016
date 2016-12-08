@@ -60,9 +60,9 @@
 
 ##4. footer链接分隔
 
-![Alt text](./1481177554829.png)
+![link picture](./readmepic/link_pic.png)
 
-![Alt text](./1481177617705.png)
+![code](./readmepic/code_pic.png)
 
 如上图所示，用`<b>`标签包裹`｜`，建立分隔，从效果上看，挺好的，但是`<b>`标签表示粗体文本，明显没有分隔的意思。如果要做分隔，可以用`<hr>`，但是默认情况下是水平线，可以给`<hr>`加一个`class`，设置合适的样式。可能会更符合意思。
 
