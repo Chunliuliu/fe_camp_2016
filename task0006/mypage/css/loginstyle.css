@@ -1,0 +1,96 @@
+* { margin: 0; padding: 0; }
+a{
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+.header a{
+    float: right;
+    display: block;
+    font-family: "Î¢ÈíÑÅºÚ";
+    color: aliceblue;
+    background-color: darkseagreen;
+    width: 100px;
+    text-align: center;
+    padding: 20px;
+    margin: 10px 0px;
+}
+.clear{
+    clear: both;
+}
+.loginbox{
+    width: 90%;
+    margin: 0 auto;
+}
+img.slogen{
+    width:200px;
+    display: block;
+}
+.main{
+    border:7px solid black;
+    padding: 30px 40px;
+    margin:10px 0;
+}
+.mainpic{
+    margin-left: 10%;
+}
+#username,#password{
+    padding: 6px 12px;
+}
+form{
+    float: right;
+    margin-right:20%;
+    margin-top: 70px;
+}
+input[type='submit']{
+    border:none;
+    background:darkseagreen;
+    color: aliceblue;
+    font-size: 17px;
+    padding: 6px 12px;
+    width: 100%;
+}
+form a{
+   display: block;
+    width: 100%;
+    margin:0 auto;
+    color: dodgerblue;
+    text-align: center;
+}
+.text-center{
+    text-align: center;
+}
+input[type='button']{
+    border:1px solid #aaaaaa;
+    background:#fff;
+    color: #aaaaaa;
+    font-size: 17px;
+    padding: 6px 12px;
+    width: 100%;
+    margin-top: 5px;
+}
+input[type='button']:hover{
+    background-color: darkseagreen;
+    color: white;
+    cursor:pointer;
+}
+
+footer{
+    width: 100%;
+    height: 300px;
+    background-color: black;
+    position: relative;
+}
+footer ul{
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 35%;
+}
+footer ul li{
+    float: left;
+    list-style: none;
+    margin-right: 35px;
+}
+footer ul li a{
+    color: white;
+}
