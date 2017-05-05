@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+	<meta charset="UTF-8">
+	<title>倒计时</title>
+</head>
+<style type="text/css">
+	h1{
+		text-align: center;
+		margin-top: 100px;
+	}
+	a{
+		text-decoration: none;
+		padding: 0.5em;
+		background-color: hsl(181, 58%, 52%);
+		color: white;
+		line-height: 1.5;
+	}
+</style>
+<body>
+	<h1>二月每周三限时促销！！！<a href="#" id="timelist1">看看时间</a></h1>
+<script type="text/javascript"> 
+	var elem = document.getElementById('timelist1');
+	elem.onclick = timelist;
+	function timelist() {
+		let result = [];
+	    let year = 2017,month = 1,monthreal,date = 1;
+		for (var i = 0; i < 28; i++) {
+			let dt = new Date(year,month,date);
+			let today = new Date();
+			let myObj1 = new Object;
+			monthreal = month + 1;
+			let day = dt.getDay();
+			if (day == 3) {
+				myObj1.date = year+'/'+monthreal+'/'+date;
+				let totalSecs = (today - dt)/1000;
+				let totalDays = Math.floor(totalSecs/3600/24);
+				if (totalDays > 0) {
+					myObj1.daysBefore = ( - totalDays);
+				}else {
+
+					myObj1.daysBefore = ( - totalDays);
+				}
+				result.push(myObj1);
+			}
+			date++;
+		}
+		alert(JSON.stringify(result));
+	}	
+</script>
+</body>
+</html>

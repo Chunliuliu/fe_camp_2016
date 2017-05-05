@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+	<meta charset="UTF-8">
+	<title>兴趣爱好</title>
+	<style type="text/css">
+		p{
+			text-align: center;
+			line-height: 1.5;
+		}
+		p:first-child{
+			margin-top: 10em;
+		}
+		input[type=text]{
+			line-height: 2;
+			width: 20em;
+		}
+	</style>
+</head>
+<body>
+	<p>
+		<input type="text" name="hobby" placeholder="请输入你的爱好,用半角逗号隔开" id="hobby">
+		<input type="button" name="submit" value="提交" id="sub">
+	</p>
+	<p>
+		<label>你的爱好是不是:<span id="result"></span></label>
+	</p>
+<script type="text/javascript">
+	let sub = document.getElementById('sub');
+	sub.onclick = getHobby;
+
+	function getHobby() {
+		let str = document.getElementById('hobby').value;
+	    var charArray = str.split(',');
+	    let result = [];
+	    
+	    for (var i = 0; i < charArray.length; i++) {
+	    	
+	    	if(result.indexOf(charArray[i])===-1){
+	    		 result.push(charArray[i]);
+	    	}
+
+	    }
+	    var text = document.getElementById('result');
+	    text.innerHTML = result;
+	   
+	};
+</script>
+</body>
+</html>
